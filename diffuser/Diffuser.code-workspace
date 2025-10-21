@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../october_datasets"
+		},
+		{
+			"path": "../../prisoner_logs"
+		}
+	],
+	"settings": {}
+}

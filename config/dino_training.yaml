@@ -1,0 +1,79 @@
+parking_model:
+  # train
+  data_dir: '/home/intern2025/research/Parking_Pipeline/' # Please input your dataset root here
+  log_dir: './log/'
+  checkpoint_dir: './ckpt'
+  log_every_n_steps: 5
+  check_val_every_n_epoch: 1
+
+  epochs: 40 # 26
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  batch_size: 16 
+
+  training_map: "e2e_parking/Town_Opt_1000" # Please input your training dataset relative path here
+  validation_map: "e2e_parking/Town_Opt_1000_Val" # Please input your validation dataset relative path here
+
+  future_frame_nums: 4
+  hist_frame_nums: 10
+  token_nums: 204 
+  image_crop: 294
+
+  # bev encoder
+  bev_encoder_in_channel: 64
+  bev_encoder_out_channel: 264  # 256 + 4 + 4
+
+  # bev model
+  bev_x_bound: [-10.0, 10.0, 0.1]
+  bev_y_bound: [-10.0, 10.0, 0.1]
+  bev_z_bound: [-10.0, 10.0, 20.0]
+  d_bound: [0.5, 12.5, 0.25]
+  final_dim: [294, 294]
+  bev_down_sample: 14
+  use_depth_distribution: 1
+  backbone: "dinov2_vitb14_reg" # "dinov2_vitb14_reg", "dinov2_vitl14_reg"
+
+  # segmentation
+  seg_classes: 3
+  seg_vehicle_weights: [1.0, 2.0, 2.0]
+
+  # transformer encoder
+  tf_en_dim: 264
+  tf_en_heads: 6
+  tf_en_layers: 4
+  tf_en_dropout: 0.05
+  tf_en_bev_length: 256
+  tf_en_motion_length: 3
+  tf_en_target_length: 3
+
+
+  # transformer decoder
+  tf_de_emb_dim: 267
+  tf_de_proj_dim: 45
+  tf_de_dim: 312 # 264
+  tf_de_heads: 3 # 6
+  tf_de_layers: 4
+  tf_de_dropout: 0.05
+  tf_de_tgt_dim: 15
+  
+  # dynamics model ckpt
+  resume_ckpt_path: "./ckpt/exp_2025_7_11_2_2_41/E2EParking-epoch=03-val_loss=1.73.ckpt"
+  hybrid_ckpt_path: "./ckpt/exp_2025_7_11_2_2_41/E2EParking-epoch=03-val_loss=1.73.ckpt"
+
+  # diffusion parameters
+  observation_dim: 9
+  action_dim: 3
+  diffusion_feat_dim: 3
+  n_timesteps: 10
+  loss_type: 'l1'
+  clip_denoised: False
+  predict_epsilon: False
+  action_weight: 1.0
+  loss_discount: 1.0
+  loss_weights: null
+  planner_type: local # local, global, local_interp, global_interp
+  normalize_traj: True
+  motion_head: embedding # embedding, segmentation
+  ego_centric_traj: True
+  data_aggregate_type: mean
+  data_interval: 4
