@@ -14,7 +14,7 @@
             // For training
             // "args": ["--config", "./config/dino_training.yaml", "--model_path", "./ckpt/perception_model/E2EParking-epoch=14-val_loss=0.90.ckpt"]
             // For testing
-            "args": ["--model_config_path", "./config/dino_training.yaml", "--model_path", "./ckpt/local_embedding_10_steps/last.ckpt", "--model_path_dynamic", "./milestone/dynamic_control_speed.ckpt", "--show_eva_imgs", "True", "--eva_parking_nums", "6", "--eva_task_nums", "16", "--eva_epochs", "1"]
+            "args": ["--model_config_path", "./config/dino_training.yaml", "--model_path", "./ckpt/local_embedding_10_steps/last.ckpt", "--model_path_dynamic", "./milestone/dynamic_control_speed.ckpt", "--show_eva_imgs", "False", "--eva_parking_nums", "6", "--eva_task_nums", "16", "--eva_epochs", "1"]
         }
     ]
 }

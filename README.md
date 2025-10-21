@@ -7,7 +7,7 @@ Zixuan Wu, Hengyuan Zhang, Ting-Hsuan Chen, Yuliang Guo, David Paz, Xinyu Huang,
 (Work done in [Bosch AI Silicon Valley](https://www.bosch-ai.com/))
 
 ## Introduction
-This repository contains the code for the submitted 2026 IEEE International Conference on Robotics & Automation (ICRA) paper.
+This repository contains the code for our submitted conference paper.
 
 This work proposes a learning modular based pipeline of the autonomous parking that can be trained with only a specific environment setting in CARLA but applied to multiple different domain settings and even the Gaussian-Splatting (GS) rendered real-world in a zero-shot fashion without additional data collection. The inputs are the images captured by surrounding cameras, while the output is an on-the-fly updated trajectory. We test the performance of our policies on both CARLA and real-world 3DGS settings.
 
@@ -103,12 +103,7 @@ We intuitively compare our dino-diffusion pipeline with the concurrent state-of-
 
 If you think this work helps, please consider cite it with:
 ```
-@inproceedings{E2EAPA,
-	title={E2E Parking: Autonomous Parking by the End-to-end Neural Network on the CARLA Simulator},
-	author={Yang, Yunfan and Chen, Denglong and Qin, Tong and Mu, Xiangru and Xu, Chunjing and Yang, Ming},
-	booktitle={Conference on IEEE Intelligent Vehicles Symposium},
-	year={2024}
-}
+
 ```
 
 ## Acknowledgement
