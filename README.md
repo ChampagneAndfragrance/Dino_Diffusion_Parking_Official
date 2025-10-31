@@ -1,5 +1,9 @@
 # Dino-Diffusion Modular Designs Bridge the Cross-Domain Gap in Autonomous Parking
 
+## Statement
+
+We are sorry but we have to temporarily remove the code to follow the Bosch source code opening process. We will immediately open the code again after the period is done. Feel free to email Zixuan Wu (zwu380@gatech.edu) for any questions!
+
 ## Author
 
 Zixuan Wu, Hengyuan Zhang, Ting-Hsuan Chen, Yuliang Guo, David Paz, Xinyu Huang, Liu Ren 
