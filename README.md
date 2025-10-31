@@ -20,7 +20,7 @@ This work proposes a learning modular based pipeline of the autonomous parking t
 We intuitively compare our dino-diffusion pipeline with the concurrent state-of-art method in the following video. It is clear that our method outperform baselines in the cross-domain tasks.
 
 <p align="center">
-  <img src="./resource/cross_domain_compressed.gif" alt="Dino_Diffusion Parking Demo" width="85%">
+  <img src="./cross_domain_compressed.gif" alt="Dino_Diffusion Parking Demo" width="85%">
 </p>
 
 
