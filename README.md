@@ -73,7 +73,7 @@ When the evaluation is completed, metrics will be saved to csv files located at 
 ## Dataset and Training
 
 ### Training Data
-We use the same dataset with the state-of-the-art work [End-to-End Visual Autonomous Parking via Control-Aided Attention](https://www.arxiv.org/abs/2509.11090?context=cs) and show better performance over it in the benchmarking. Since the whole dataset is extremely large (> 2 TB) so we upload part of our training data to [HuggingFace](https://huggingface.co/datasets/ChampagneAndfragrance/Dino_Diffusion_Parking/tree/main).
+Since the whole dataset is extremely large (> 2 TB) so we upload part of our training data to [HuggingFace](https://huggingface.co/datasets/ChampagneAndfragrance/Dino_Diffusion_Parking/tree/main).
 
 ### Training script
 
@@ -107,15 +107,7 @@ We intuitively compare our dino-diffusion pipeline with the concurrent state-of-
 
 If you think this work helps, please consider cite it with:
 ```
-@misc{wu2025dinodiffusionmodulardesignsbridge,
-      title={Dino-Diffusion Modular Designs Bridge the Cross-Domain Gap in Autonomous Parking}, 
-      author={Zixuan Wu and Hengyuan Zhang and Ting-Hsuan Chen and Yuliang Guo and David Paz and Xinyu Huang and Liu Ren},
-      year={2025},
-      eprint={2510.20335},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2510.20335}, 
-}
+
 ```
 
 ## Acknowledgement
